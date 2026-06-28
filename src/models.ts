@@ -23,9 +23,9 @@ import type {
     VersionDetailRaw,
     SrdRouteRaw,
     WakeInterval,
-} from "./types";
+} from "./types.js";
 
-import type { UkcpData } from "./data";
+import type { UkcpData } from "./data.js";
 
 /** A flight rule category (VFR / IFR). */
 export class FlightRule {

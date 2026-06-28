@@ -26,8 +26,8 @@ import type {
     StandAssignmentDetailRaw,
     WakeCategorySchemeRaw,
     VersionDetailRaw,
-} from "./types";
-import { UkcpApiError } from "./errors";
+} from "./types.js";
+import { UkcpApiError } from "./errors.js";
 
 /**
  * Options for configuring the UkcpApi HTTP client.

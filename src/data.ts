@@ -1,4 +1,4 @@
-import { UkcpApi } from "./api";
+import { UkcpApi } from "./api.js";
 import type {
     AirfieldRaw,
     ControllerPositionV2Raw,
@@ -34,8 +34,8 @@ import {
     WakeCategory,
     VersionDetail,
     SrdRoute,
-} from "./models";
-import type { SrdRouteSearchParams } from "./types";
+} from "./models.js";
+import type { SrdRouteSearchParams } from "./types.js";
 
 /**
  * Central registry that holds all UKCP data and provides
