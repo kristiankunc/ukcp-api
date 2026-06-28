@@ -1,7 +1,7 @@
-export { UkcpApi } from "./api";
-export type { UkcpApiOptions } from "./api";
-export { UkcpData } from "./data";
-export { UkcpApiError, UkcpNotFoundError } from "./errors";
+export { UkcpApi } from "./api.js";
+export type { UkcpApiOptions } from "./api.js";
+export { UkcpData } from "./data.js";
+export { UkcpApiError, UkcpNotFoundError } from "./errors.js";
 export {
     Airfield,
     ControllerPosition,
@@ -22,7 +22,7 @@ export {
     EnrouteReleaseType,
     VersionDetail,
     SrdRoute,
-} from "./models";
+} from "./models.js";
 
 export type {
     WelcomeMessage,
@@ -57,4 +57,4 @@ export type {
     WakeInterval,
     HoldRestriction,
     DeemedSeparatedHold,
-} from "./types";
+} from "./types.js";

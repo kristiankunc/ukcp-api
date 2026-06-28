@@ -1,6 +1,7 @@
 {
     "name": "ukcp-api",
     "version": "0.0.1",
+    "type": "module",
     "description": "TypeScript API wrapper for the VATSIM UK Controller Plugin public API",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
