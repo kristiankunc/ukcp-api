@@ -1,24 +1,24 @@
 name: publish
 
 on:
-  release:
-    types: [published]
+    release:
+        types: [published]
 
 jobs:
-  build-and-publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    build-and-publish:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: "https://registry.npmjs.org"
+            - uses: actions/setup-node@v6
+              with:
+                  node-version: 20
+                  registry-url: "https://registry.npmjs.org"
 
-      - run: npm ci
+            - run: npm ci
 
-      - run: npm run build
+            - run: npm run build
 
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            - run: npm publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
