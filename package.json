@@ -3,6 +3,10 @@
     "version": "0.0.2",
     "type": "module",
     "description": "TypeScript API wrapper for the VATSIM UK Controller Plugin public API",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kristiankunc/ukcp-api"
+    },
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
