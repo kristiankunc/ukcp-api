@@ -1,0 +1,12 @@
+default_stages = ["pre-commit"]
+
+[[repos]]
+repo = "local"
+
+[[repos.hooks]]
+id = "prettier"
+name = "Prettier"
+entry = "npx prettier --write --ignore-unknown"
+language = "system"
+files = '\.(js|ts|svelte|css|html|json|md|yaml)$'
+pass_filenames = true

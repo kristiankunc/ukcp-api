@@ -1,0 +1,34 @@
+{
+    "name": "ukcp-api",
+    "version": "0.0.1",
+    "description": "TypeScript wrapper for the VATSIM UK Controller Plugin public API",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "prepublishOnly": "npm run build",
+        "format": "prettier --write ."
+    },
+    "keywords": [
+        "vatsim",
+        "ukcp",
+        "api",
+        "controller-plugin"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^5.0.0",
+        "vitest": "^4.1.9"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "prettier": "^3.9.1"
+    }
+}
